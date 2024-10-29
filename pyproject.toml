@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "jcg-testdatascience-1"
+version = "0.1.0"
+description = "Ejercicio 1 de la prueba de Data Science para Capgemini"
+authors = ["javcres <javier.crespo.guerrero@estudiantes.uva.es>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+feature-engine = "^1.8.1"
+pydantic = "^2.9.2"
+strictyaml = "^1.7.3"
+mkdocs = "^1.6.1"
+mkdocs-jupyter = "^0.25.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+scipy = "^1.14.1"
+xgboost = "^2.1.2"
+lightgbm = "^4.5.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+
+[tool.poetry.group.typing.dependencies]
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+black = "^24.10.0"
+mypy = "^1.13.0"
+pandas-stubs = "^2.2.3.241009"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

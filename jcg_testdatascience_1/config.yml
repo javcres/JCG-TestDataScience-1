@@ -1,0 +1,102 @@
+# Nombre del paquete
+package_name: jcg_testdatascience_1
+
+# Ubicacion de los datos
+training_data: heart_disease_uci.csv 
+
+# Nombres de los modelos finales
+pipeline_name: jcg_testdatascience_1
+pipeline_save_file: jcg_testdatascience_1_output_v
+
+# Semilla para garantizar reproducibilidad
+random_seed: 2024
+
+# Variables
+target: num
+
+features:
+  - age
+  - sex
+  - dataset
+  - cp
+  - trestbps
+  - chol
+  - fbs
+  - restecg
+  - thalch
+  - exang
+  - oldpeak
+  - slope
+  - ca
+  - thal
+
+vars_to_drop:
+  - id
+
+categorical_vars:
+  - dataset
+  - sex
+  - cp
+  - fbs
+  - restecg
+  - exang
+  - slope
+  - thal
+
+categorical_vars_to_encode:
+  - dataset
+  - sex
+  - cp
+  - restecg
+  - slope
+  - thal
+
+categorical_vars_with_missing:
+  - fbs
+  - restecg
+  - exang
+  - slope
+  - thal
+
+categorical_vars_to_inpute_with_most_freq:
+  - fbs
+  - restecg
+  - exang
+
+categorical_vars_to_inpute_with_new_label:
+  - slope
+  - thal
+
+numerical_vars:
+  - ca
+  - age
+  - thalch
+  - trestbps
+  - chol
+  - oldpeak
+
+numerical_vars_with_missing:
+  - ca
+  - thalch
+  - trestbps
+  - chol
+  - oldpeak
+
+numerical_vars_with_missing_mean_inputation:
+  - thalch
+  - ca
+
+numerical_vars_with_missing_median_inputation:
+  - chol
+  - trestbps
+  - oldpeak
+
+numerical_vars_to_replace_ceros:
+  - trestbps
+  - chol
+
+# Parametros del modelo final
+knn_n_neighbors: 12
+knn_weights: distance
+
+
