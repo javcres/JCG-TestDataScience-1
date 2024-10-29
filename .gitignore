@@ -1,6 +1,7 @@
 .mypy_cache
 .pytest_cache
 .tox
+.vscode
 poetry.lock
 TODO.md
 **/__pycache__/
