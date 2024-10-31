@@ -62,7 +62,9 @@ Para facilitar la ejecución de tareas, se ha utilizado la herramienta [Tox](htt
 
 Si queremos ejecutar el entrenamiento del modelo utilizaremos el comando
 
-`tox run -e train`
+```{shell}
+tox run -e train
+```
 
 Con ello, se generará un archivo `.pkl` dentro de la carpeta `jcg_testdatascience_1/models` con el modelo entrenado.
 
@@ -70,18 +72,24 @@ Con ello, se generará un archivo `.pkl` dentro de la carpeta `jcg_testdatascien
 
 Se han creado tests para las distintas partes del código. Para ejecutarlos, usaremos el comando
 
-`tox run -e test_package`
+```{shell}
+tox run -e test_package
+```
 
 ### Ejecutar checks de formateado del código
 
 Se han utilizado las librerías `mypy, flake8, isort` para formatear el código y adaptarlo a las convenciones. Para ejecutar estos checks, usaremos el comando
 
-`tox run -e checks`
+```{shell}
+tox run -e checks
+```
 
 ### Build del paquete final
 
 Por último, para construir el paquete se debe utilizar el comando
 
-`poetry build`
+```{shell}
+poetry build
+```
 
 Que nos generará los archivos `.whl` y `.tar.gz` en la carpeta `/dist`
