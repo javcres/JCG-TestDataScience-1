@@ -28,31 +28,33 @@ Con ello, ya deberíamos tener todas las dependencias para poder ejecutar tanto 
 
 ```plaintext
 jcg-testdatascience-1
-├── .github/                        # Workflows de Github
-├── data/                           # Almacenamiento de datos de entrenamiento del modelo
-├── dist/                           # Build del paquete final
-├── docs/                           # Documentación del proyecto
-├── jcg-testdatascience-1/          # Código fuente del paquete
-│   ├── config/                     # Funcionalidad relativa a configuraciones y parámetros
-│   │   └── config.py               # Lógica de carga de las configuraciones y parámetros
-│   ├── models/                     # Almacén de modelos serializados ya entrenados
-│   ├── processing/                 # Funcionalidad relativa al procesado de datos
-│   │   ├── data_manager.py         # Lógica de la carga y persistencia de datos y modelos
-│   │   ├── features.py             # Transformadores de datos custom
-│   │   └── validation.py           # Lógica de validación de nuevos inputs
-│   ├── config.yml                  # Configuraciones del modelo y el paquete
-│   ├── pipeline.py                 # Definición del pipeline de predicción
-│   ├── predict.py                  # Lógica de la predicción de nuevos valores
-│   ├── train_pipeline.py           # Lógica del entrenamiento del modelo
-│   └── VERSION                     # Versión del proyecto
-├── notebooks/                      # Jupyter Notebooks
-├── tests/                          # Tests del paquete
-├── .gitignore                      # Archivos a ignorar por Git
-├── mypy.ini                        # Configuración de MyPy
-├── tox.ini                         # Configuración de Tox
-├── pyproject.toml                  # Configuración del proyecto
-├── mkdocs.yaml                     # Configuración del la documentación con MkDocs
-└── README.md                       # README del proyecto
+├── .github/                                      # Workflows de Github
+├── data/                                         # Almacenamiento de datos de entrenamiento del modelo
+├── dist/                                         # Build del paquete final
+├── docs/                                         # Documentación del proyecto
+├── jcg-testdatascience-1/                        # Código fuente del paquete
+│   ├── config/                                   # Funcionalidad relativa a configuraciones y parámetros
+│   │   └── core.py                               # Lógica de carga de las configuraciones y parámetros
+│   ├── models/                                   # Almacén de modelos serializados ya entrenados
+│   ├── processing/                               # Funcionalidad relativa al procesado de datos
+│   │   ├── data_manager.py                       # Lógica de la carga y persistencia de datos y modelos
+│   │   ├── features.py                           # Transformadores de datos custom
+│   │   └── validation.py                         # Lógica de validación de nuevos inputs
+│   ├── config.yml                                # Configuraciones del modelo y el paquete
+│   ├── pipeline.py                               # Definición del pipeline de predicción
+│   ├── predict.py                                # Lógica de la predicción de nuevos valores
+│   ├── train_pipeline.py                         # Lógica del entrenamiento del modelo
+│   └── VERSION                                   # Versión del proyecto
+├── notebooks/                                    # Jupyter Notebooks
+│   ├── analisis-exploratorio.ipynb               # Notebook con el análisis exploratorio
+│   └── transformacion-seleccion-modelo.ipynb     # Notebook con el proceso de selección del modelo
+├── tests/                                        # Tests del paquete
+├── .gitignore                                    # Archivos a ignorar por Git
+├── mypy.ini                                      # Configuración de MyPy
+├── tox.ini                                       # Configuración de Tox
+├── pyproject.toml                                # Configuración del proyecto
+├── mkdocs.yaml                                   # Configuración del la documentación con MkDocs
+└── README.md                                     # README del proyecto
 ```
 
 *NOTA: se ha utilizado [Este repositorio](https://github.com/trainindata/deploying-machine-learning-models/tree/master/section-05-production-model-package) como boilerplate del proyecto.*
