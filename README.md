@@ -11,7 +11,7 @@
 
 ## Documentación del proyecto
 
-La documentación con el planteamiento del ejercicio, guía de instalación y los notebooks de Exploración y Selección del Modelo se puede encontrar en [TODO](TODO), esta se ha realizado utilizando la librería [MkDocs](https://www.mkdocs.org/).
+La documentación con el planteamiento del ejercicio, guía de instalación y los notebooks de Exploración y Selección del Modelo se puede encontrar [Aquí](https://javcres.github.io/JCG-TestDataScience-1/), esta se ha realizado utilizando la librería [MkDocs](https://www.mkdocs.org/).
 
 ## Instalación de dependencias
 
