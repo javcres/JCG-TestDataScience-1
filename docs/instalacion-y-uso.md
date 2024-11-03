@@ -2,7 +2,9 @@
 
 El código proporcionado utiliza [Poetry](https://python-poetry.org/) como gestor de dependencias, por lo que el primer paso será [Instalar la herramienta](https://python-poetry.org/docs/#installing-with-pipx). Una vez instalada navegaremos a la carpeta raíz del proyecto y ejecutaremos el comando
 
-`poetry install`
+```{shell}
+poetry install
+```
 
 Con ello, ya deberíamos tener todas las dependencias para poder ejecutar tanto los jupyter notebooks como el código dentro del paquete. Se ha asegurado la reproducibilidad del modelo y los análisis mediante la definición de semillas para los casos donde interviene la aleatoriedad.
 
